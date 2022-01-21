@@ -34,7 +34,7 @@ By default, all TF records are shuffled in memory at once (`--step=-1`). If the 
 
 * **With external storage**
 
-You can use `--step=Y` to specify that only Y TF records can be loaded in memory at once. Unfortunately it is impossible to say beforehand how much memory you need for Y TF records so it is a test-and-try parameter for now.
+You can use `--step=Y` to specify that only Y records can be loaded in memory at once. Unfortunately it is impossible to say beforehand how much memory you need for Y records so it is a test-and-try parameter for now.
 
 ### Improvements
 
