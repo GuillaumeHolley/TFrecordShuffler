@@ -24,7 +24,7 @@ python3 shuffle_tfrecords_lowmem.py \
 
 ### Output
 
-The shuffled TF record files will have the prefix `deepvariant_training/training_set.with_label.shuffled`. There should be `direct_num_workers`. Furthermore, a summary file for DeepVariant training will be generated in `training_set.pbtxt`.
+The shuffled TF record files will have the prefix `deepvariant_training/training_set.with_label.shuffled`. There should be `direct_num_workers` of them. Furthermore, a summary file for DeepVariant training will be generated in `training_set.pbtxt`.
 
 ### Memory usage
 
