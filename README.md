@@ -13,7 +13,7 @@ Other modules are required (`zlib, pickle, glob, hashlib, logging`) but should a
 ## Usage
 
 ```
-python3 shuffle_tfrecords_lowmem.pu \
+python3 shuffle_tfrecords_lowmem.py \
 --input_pattern_list="deepvariant_training/training_set.with_label.tfrecord-?????-of-00024.gz" \
 --output_pattern_prefix="deepvariant_training/training_set.with_label.shuffled" \
 --output_dataset_config="training_set.pbtxt" \
