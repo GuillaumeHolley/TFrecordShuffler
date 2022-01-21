@@ -1,6 +1,6 @@
 # TFrecordShuffler
 
-The script shuffles TensorFlow records locally and in-memory using as little RAM as possible, with or without external storage. It is intended to be used as a drop-in replacement for `shuffle_tfrecords_beam.py` in the DeepVariant training instructions when using the cloud id not an option. The key advantage of this script is that it very memory-efficient but it is not parallelized so it takes much longer to shuffle the records.
+The script shuffles TensorFlow records locally and in-memory using as little RAM as possible, with or without external storage. It is intended to be used as a drop-in replacement for `shuffle_tfrecords_beam.py` in the DeepVariant training instructions when using the cloud is not an option. The key advantage of this script is that it very memory-efficient but it is not parallelized so it takes much longer to shuffle the records.
 
 ## Requirements
 
