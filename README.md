@@ -4,7 +4,7 @@ The script shuffles TensorFlow records locally and in-memory using as little RAM
 
 ## Requirements
 
-Python 3 is required and TensorFlow.
+Python 3 and TensorFlow are required.
 ```
 pip3 install tensorflow
 ```
