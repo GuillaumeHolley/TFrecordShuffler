@@ -55,6 +55,8 @@ def shuffle_tfrecords(dataset_name, input_filename_pattern_list, input_pattern_l
 
 	# Make sure we process the input files always in the same order
 	for idx, filepattern in enumerate(input_filename_pattern_list): lfn.extend(glob.glob(filepattern))
+		
+	if (len(lfn) == 0): sys.exit("No file found matching input pattern list. Shuffling aborted.")
 
 	lfn.sort()
 
