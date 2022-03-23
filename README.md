@@ -12,6 +12,8 @@ Other modules are required (`zlib, pickle, glob, hashlib, logging`) but should a
 
 ## Usage
 
+This script does not use any GPU.
+
 ```
 python3 shuffle_tfrecords_lowmem.py \
 --input_pattern_list="deepvariant_training/training_set.with_label.tfrecord-?????-of-00024.gz" \
