@@ -26,13 +26,15 @@ python3 shuffle_tfrecords_lowmem.py \
 
 The shuffled TF record files will have the prefix `deepvariant_training/training_set.with_label.shuffled`. There should be `direct_num_workers` of them. Furthermore, a summary file for DeepVariant training will be generated in `training_set.pbtxt`.
 
-### Memory usage
+### Performance
 
-* **Without external storage**
+As an example, shuffling 125 GB of records took 46h (wall-clock and CPU) using 150 GB of RAM.
 
-By default, all TF records are shuffled in memory at once (`--step=-1`). If the files matching the input pattern list `deepvariant_training/training_set.with_label.tfrecord-?????-of-00024.gz` take a total of X GB on disk, you will need about 1.2 * X GB of RAM.
+* **Memory usage without external storage**
 
-* **With external storage**
+By default, all TF records are shuffled in memory at once (`--step=-1`). If the files matching the input pattern list `deepvariant_training/training_set.with_label.tfrecord-?????-of-00024.gz` take a total of X GB on disk, you will need at least 1.2 * X GB of RAM.
+
+* **Memory usage with external storage**
 
 You can use `--step=Y` to specify that only Y records can be loaded in memory at once. Unfortunately it is impossible to say beforehand how much memory you need for Y records so it is a test-and-try parameter for now.
 
